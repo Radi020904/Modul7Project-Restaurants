@@ -1,2 +1,2 @@
 # Modul7Project-Restaurants
-this is our repo
+this is our app repo
