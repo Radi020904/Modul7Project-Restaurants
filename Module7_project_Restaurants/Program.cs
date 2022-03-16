@@ -10,7 +10,7 @@ namespace Module7_project_Restaurants
     {
         static void Main(string[] args)
         {
-            Console.WriteLine();
+            Console.WriteLine("mnogo tupo");
         }
     }
 }
