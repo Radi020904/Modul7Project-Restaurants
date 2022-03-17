@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Module7_project_Restaurants.Data.Models
+{
     public class Menu
     {
         /// <summary>
