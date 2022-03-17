@@ -11,19 +11,29 @@ namespace Module7_project_Restaurants.Data.Models
     public class MenuMeal
     {
         /// <summary>
-        /// Primary Key
+        /// Foreign Key connected with table Meal
         /// </summary>
-        [ForeignKey(nameof(Meal))]
+        [ForeignKey("Meal")]
         public int MealId { get; set; }
-        [ForeignKey(nameof(Menu))]
+        /// <summary>
+        /// Navigation property
+        /// </summary>
+        public Meal Meal { get; set; }
+        /// <summary>
+        /// Foreign Key connected with table Drivers
+        /// </summary>
+        [ForeignKey("Menu")]
         public int MenuId { get; set; }
-        public virtual Meal Meal { get; set; }
-        public virtual Menu Menu { get; set; }
+        /// <summary>
+        /// Navigation property
+        /// </summary>
+        public Menu Menu { get; set; }
         public override string ToString()
         {
             string result = "MenuMeal:\n";
-            result += $"MealID: {MealId}\n";
-            result += $"MenuId: {MenuId}\n";
+            result += $"{Meal.ToString()}\n";
+            result += Menu.ToString();
+            
             return result;
         }
     }

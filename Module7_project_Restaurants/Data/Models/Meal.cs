@@ -26,12 +26,13 @@ namespace Module7_project_Restaurants.Data.Models
         [Required]
         [MaxLength(50, ErrorMessage = "meal type is too long")]
         public string Type { get; set; }
+        public ICollection<MenuMeal> Meals { get;}
         public override string ToString()
         {
             string result = "Meal:\n";
             result += $"name: {Name}\n";
             result += $"price: {Price}\n";
-            result += $"portionSize: {PortionSize}";
+            result += $"portionSize: {PortionSize}\n";
             result += $"type: {Type}";
             return result;
         }

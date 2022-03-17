@@ -249,9 +249,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Configuration.cs" />
+    <Compile Include="Data\Models\Company.cs" />
     <Compile Include="Data\Models\Meal.cs" />
     <Compile Include="Data\Models\Menu.cs" />
     <Compile Include="Data\Models\MenuMeal.cs" />
+    <Compile Include="Data\Models\Restaurant.cs" />
+    <Compile Include="Data\Models\Staff.cs" />
+    <Compile Include="Data\Models\StaffRestaurant.cs" />
+    <Compile Include="Data\RestaurantsContext.cs" />
     <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
