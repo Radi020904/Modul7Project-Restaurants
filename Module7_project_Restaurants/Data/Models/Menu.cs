@@ -28,7 +28,7 @@ namespace Module7_project_Restaurants.Data.Models
         public string Link { get; set; }
         public override string ToString()
         {
-            string result = "Meal:\n";
+            string result = "Menu:\n";
             result += $"rating: {Rating}\n";
             result += $"type: {Type}\n";
             result += $"language: {Language}";
